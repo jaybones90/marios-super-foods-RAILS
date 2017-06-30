@@ -4,6 +4,12 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def search
+    country = params[:q].capitalize
+    @products = Product.search(country)
+    render :index
+  end
+
   def show
     @product = Product.find(params[:id])
   end

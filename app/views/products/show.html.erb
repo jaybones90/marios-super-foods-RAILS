@@ -2,9 +2,34 @@
 <%= link_to "Return To Product List", products_path %>
 
   <h1> <%= @product.name %> </h1>
-  <h3><%= @product.country %> </h3>
+  <h3>Country of Origin: <%= @product.country %> </h3>
   <h4>$ <%= @product.cost %> </h4>
 
+  <% if @product.reviews.any? %>
+    <% @product.reviews.each do |review| %>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Author: <%= review.author %> Rating: <%= review.rating %>
+          </div>
+          <div class="panel-body">
+            <%= review.content %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+
+<br>
+  <div class="button">
+    <%= link_to "Add Review", new_product_review_path(@product) %>
+  </div>
+<br>
+
+
+<br>
 
 <%= link_to "Edit", edit_product_path(@product) %>
 <br>

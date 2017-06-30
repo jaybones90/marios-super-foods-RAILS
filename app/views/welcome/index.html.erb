@@ -1,0 +1,36 @@
+<h1 class="header"> Super Mario's Speciality Foods </h1>
+
+<div class="bg"></div>
+
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="home-panel panel panel-default">
+      <div class="panel-heading">
+        <h1>3 Most Recent Products</h1>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <% @products.each do |product| %>
+          <li> <%= link_to product.name, product_path(product) %> </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+      <div class="home-panel panel panel-default">
+        <div class="panel-heading">
+          <h1>Product With Most reviews</h1>
+        </div>
+        <div class="panel-body">
+          <% @most_reviewed_product.each do |product| %>
+          <h3> <%= link_to product.name, product_path(product) %> </h3>
+          <% end %>
+        </div>
+      </div>
+  </div>
+
+</div>
