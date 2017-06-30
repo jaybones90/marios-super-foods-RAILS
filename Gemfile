@@ -20,6 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'faker'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -42,6 +43,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'launchy'
   gem 'shoulda-matchers'
+
 end
 
 group :development do
