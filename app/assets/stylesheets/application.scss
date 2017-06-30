@@ -1,2 +1,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+h1 {
+  color: red;
+}
+
+
+
+table {
+  width:  100%;
+}
+
+.button {
+  margin: 20% 0px 0px 20%;
+  border: 1px solid black;
+  width: 25%;
+  padding: 5px 5px 5px 5px;
+  box-shadow: -1px -1px 6px black;
+  text-align: center;
+}
