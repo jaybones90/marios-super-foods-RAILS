@@ -26,7 +26,7 @@
       </div>
       <br>
       <%= form_tag("products/search", method: "get") do %>
-        <%= label_tag(:q, "Search for:") %>
+        <%= label_tag(:q, "Search By Country:") %>
         <%= text_field_tag(:q) %>
         <%= submit_tag("Search") %>
       <% end %>

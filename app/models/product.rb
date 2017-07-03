@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
-  validates :name, :country, :cost, :presence => true
+  validates :name, uniqueness: { scope: :country }, :presence => true
+  validates :country, :cost, :presence => true
   before_save(:normalize_text)
 
   has_many :reviews
