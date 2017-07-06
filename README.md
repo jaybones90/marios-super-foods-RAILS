@@ -7,6 +7,7 @@ This is a web application built in Rails that shows the current product inventor
  Run these following commands in the terminal
  * `git clone https://github.com/jaybones90/marios-super-foods-RAILS.git`
  * `cd marios-super-foods-RAILS`
+ * `bundle install`
  * `rails db:create`
  * `rails db:migrate`
  * `rails db:seed`
