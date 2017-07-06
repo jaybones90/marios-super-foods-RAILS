@@ -20,6 +20,7 @@
       </div>
     </div>
     <% end %>
+    <h3> Average Rating: <%= @product.reviews.average(:rating).round(2) %> </h3>
   <% end %>
 
 <br>

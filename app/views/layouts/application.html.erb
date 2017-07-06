@@ -20,7 +20,11 @@
         <p class="navbar-brand"><%= link_to "Products", products_path %></p>
       </nav>
     </nav>
+
     <div class="container">
+      
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
       <%= yield %>
 
     </div>

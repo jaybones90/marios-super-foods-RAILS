@@ -15,8 +15,8 @@ Review.destroy_all
 400.times do |index|
   Review.create!(
                author: Faker::Lorem.sentence(5, false, 0).chop,
-               content: Faker::Lorem.sentence(50, false, 0).chop,
-               rating: Faker::Number.between(0, 5),
+               content: Faker::Lorem.sentence(15, false, 0).chop,
+               rating: Faker::Number.between(1, 5),
                product_id: Faker::Number.between(1, 100)
             )
 end
