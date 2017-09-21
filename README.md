@@ -1,6 +1,8 @@
 # Super Mario's Speciality Foods
 
-This is a web application built in Rails that shows the current product inventory of Super Mario's Speciality Food store. Users can enter new products and leave reviews on specific products. Each product display individually on it's own page. There is a search function that allows the user to enter a country and displays those products if available.
+[View Live Site](https://super-marios-speciality-foods.herokuapp.com/)
+
+This is a web application built in Rails that shows the current product inventory of Super Mario's Speciality Food store. Users can enter new products, leave reviews and ratings on specific products. Each product will display individually on it's own page and has CRUD functionality. There are database scopes for top 3 highest rated products, average rating for each product, and product with most reviews.
 
 ### Setup/Install Requirements
 
